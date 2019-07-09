@@ -1,0 +1,151 @@
+/* Typography */
+
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700|Roboto:400,900&display=swap');
+/*font-family: 'Libre Baskerville', serif;*/
+/*font-family: 'Roboto', sans-serif;*/
+@import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive&display=swap');
+/*font-family: 'Cedarville Cursive', cursive;*/
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:700&display=swap');
+/*font-family: 'Dancing Script', cursive;*/
+@import url('https://fonts.googleapis.com/css?family=Ultra&display=swap');
+/*font-family: 'Ultra', serif;*/
+@import url('https://fonts.googleapis.com/css?family=Audiowide|Bungee+Inline|Cinzel+Decorative:400,700,900|Coda|Finger+Paint|Fredericka+the+Great|Love+Ya+Like+A+Sister|Megrim|Milonga|Monofett|Monoton|Prosto+One|Rye|Sail|Tangerine:400,700|Yatra+One&display=swap');
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 50px;
+    margin: 20px 0px;
+}
+
+h1 {
+    font-family: 'Coda', cursive;
+    font-size: 90px;
+}
+
+h2 {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 50px;
+    text-align: center;
+    padding: 20px 0px;
+    margin: 20px;
+    border-bottom: 1px solid brown;
+    border-top: 1px solid brown;
+    letter-spacing: 3px;
+}
+
+h3 {
+    font-size: 25px;
+    color: brown;
+    font-weight: bold;
+}
+
+
+main {
+    font-family: 'Roboto', sans-serif;
+    line-height: 30px;
+}
+
+nav {
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul {
+    padding-left: 20px;
+    list-style: circle;
+    margin-bottom: 20px;
+}
+
+/* anchor styles */
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration-line: underline;
+}
+
+a:active {
+    color: #767676;
+}
+
+/* Main containers */
+
+h1 {
+    text-align: center;
+    padding: 15px 0px;
+}
+
+nav {
+    background-color: brown;
+    padding: 20px 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 50px;
+}
+
+nav ul li {
+    display: inline;
+    text-align: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    /* font-weight: bold; */
+}
+
+nav ul li a:hover {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul li a:active {
+    color: black;
+    text-decoration: none;
+    border-bottom: 2px solid #FFFEF3;
+}
+
+body {
+    background-image: url(../images/background-edit2.png);
+    background-repeat: repeat;
+    background-position: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.wrapper {
+    width: 85%;
+    margin: 0px auto;
+}
+
+main {
+    background-color: #FFFEF3;
+    padding: 10px
+}
+
+footer {
+    background-color: brown;
+    color: white;
+    padding: 20px 0px;
+}
