@@ -1,16 +1,15 @@
 /* Typography */
 
-@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700|Roboto:400,900&display=swap');
-/*font-family: 'Libre Baskerville', serif;*/
-/*font-family: 'Roboto', sans-serif;*/
-@import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive&display=swap');
-/*font-family: 'Cedarville Cursive', cursive;*/
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script:700&display=swap');
-/*font-family: 'Dancing Script', cursive;*/
-@import url('https://fonts.googleapis.com/css?family=Ultra&display=swap');
-/*font-family: 'Ultra', serif;*/
-@import url('https://fonts.googleapis.com/css?family=Audiowide|Bungee+Inline|Cinzel+Decorative:400,700,900|Coda|Finger+Paint|Fredericka+the+Great|Love+Ya+Like+A+Sister|Megrim|Milonga|Monofett|Monoton|Prosto+One|Rye|Sail|Tangerine:400,700|Yatra+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap');
+/* font-family: 'Fredericka the Great', cursive; */
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap');
+/* font-family: 'DM Serif Text', serif; */
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif&display=swap');
+/* font-family: 'Bree Serif', serif; */
+@import url('https://fonts.googleapis.com/css?family=Coda&display=swap');
+/* font-family: 'Coda', cursive; */
 
 h1,
 h2,
@@ -18,64 +17,91 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Bree Serif', serif;
     font-size: 50px;
-    margin: 20px 0px;
+    margin: 10px 0px;
 }
 
 h1 {
     font-family: 'Coda', cursive;
-    font-size: 90px;
+    font-size: 50px;
+    margin: 20px;
 }
 
 h2 {
-    font-family: 'Fredericka the Great', cursive;
-    font-size: 50px;
-    text-align: center;
-    padding: 20px 0px;
-    margin: 20px;
-    border-bottom: 1px solid brown;
-    border-top: 1px solid brown;
+    font-family: 'DM Serif Text', serif;
+    font-size: 30px;
     letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.home-headings {
+    border-top: 2px solid brown;
+    border-bottom: 2px solid brown;
+    padding: 10px 0px;
 }
 
 h3 {
-    font-size: 25px;
-    color: brown;
-    font-weight: bold;
+    font-family: 'Fredericka the Great', cursive;
+    border-top: 2px solid brown;
+    border-bottom: 2px solid brown;
+    padding: 20px 0px;
+    text-align: center;
 }
 
+h4 {
+    font-size: 40px;
+    color: brown;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-left: 20px;
+}
+
+nav {
+    font-family: 'Fredericka the Great', cursive;
+}
 
 main {
     font-family: 'Roboto', sans-serif;
     line-height: 30px;
 }
 
-nav {
-    /* font-family: 'Roboto', sans-serif; */
-    font-family: 'Fredericka the Great', cursive;
-    font-size: 20px;
+p {
+    margin: 20px 0px;
+    font-size: 18px;
 }
 
-p {
-    margin-bottom: 15px;
+.opening {
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 470px;
+    line-height: 35px;
+    margin: 0px;
 }
 
 ul {
     padding-left: 20px;
     list-style: circle;
     margin-bottom: 20px;
+    font-size: 17px;
 }
 
 /* anchor styles */
 
 a {
-    color: black;
+    color: #0099C8;
     text-decoration: none;
+    font-weight: bold;
 }
 
 a:hover {
-    text-decoration-line: underline;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #006B8B;
+    font-weight: bold;
 }
 
 a:active {
@@ -84,14 +110,12 @@ a:active {
 
 /* Main containers */
 
-h1 {
-    text-align: center;
-    padding: 15px 0px;
+header {
+    padding: 20px 0px;
 }
 
 nav {
     background-color: brown;
-    padding: 20px 15px;
 }
 
 nav ul {
@@ -99,7 +123,9 @@ nav ul {
     padding-left: 0px;
     display: flex;
     justify-content: space-between;
-    margin: 10px 50px;
+    align-items: center;
+    margin: 0px 50px;
+    font-size: 20px;
 }
 
 nav ul li {
@@ -111,7 +137,13 @@ nav ul li a {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    /* font-weight: bold; */
+    font-weight: normal;
+}
+
+nav ul li a:visited {
+    color: white;
+    text-transform: uppercase;
+    font-weight: normal;
 }
 
 nav ul li a:hover {
@@ -121,31 +153,125 @@ nav ul li a:hover {
 }
 
 nav ul li a:active {
-    color: black;
-    text-decoration: none;
+    color: #ADB9BD;
     border-bottom: 2px solid #FFFEF3;
+}
+
+nav ul li a.currentpage {
+    color: black;
+    font-weight: bold;
+    border-bottom: 2px solid #FFFEF3;
+}
+
+nav ul li h1 a,
+footer a {
+    color: black;
+    font-weight: bold;
+}
+
+nav ul li h1 a:visited,
+footer a:visited {
+    color: black;
+    font-weight: bold;
+}
+
+nav ul li h1 a:hover,
+footer a:hover {
+    color: #282828;
+}
+
+nav ul li h1 a:active,
+footer a:active {
+    color: #424949;
+    border-bottom: none;
 }
 
 body {
     background-image: url(../images/background-edit2.png);
     background-repeat: repeat;
-    background-position: center;
+    background-position: top center;
     padding: 0px;
     margin: 0px;
 }
 
+.homepagebg {
+    background-image: url(../images/homepage-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0px -50px;
+    background-color: #FFFEF3;
+}
+
 .wrapper {
-    width: 85%;
+    width: 88%;
     margin: 0px auto;
 }
 
 main {
     background-color: #FFFEF3;
-    padding: 10px
+    padding: 20px;
+    overflow: auto;
+}
+
+.homepage {
+    background-color: transparent;
+}
+
+.history {
+    margin-top: 0px;
 }
 
 footer {
     background-color: brown;
     color: white;
-    padding: 20px 0px;
+    padding: 10px 10px 55px;
+}
+
+footer p {
+    margin: 10px 0px 0px;
+}
+
+footer a {
+    font-size: 20px;
+    background-color: white;
+    padding: 10px;
+    float: right;
+    margin: 0px 10px 10px;
+}
+
+/* images */
+
+.leftimg {
+    width: 45%;
+    float: left;
+    margin: 20px 25px 20px 5px;
+}
+
+.leftimg-portrait {
+    width: 45%;
+    float: left;
+    margin: 20px 20px 20px 0px;
+}
+
+.leftimg-logo {
+    width: 45%;
+    float: left;
+    margin: 0px 20px 20px 0px;
+}
+
+.centerimg {
+    width: 95%;
+    margin: 0px 25px;
+}
+
+.rightimg {
+    width: 50%;
+    float: right;
+    margin: 0px 20px 20px 20px;
+}
+
+.rightimg-history {
+    width: 50%;
+    float: right;
+    margin: 0px 10px 10px 20px;
 }
