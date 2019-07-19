@@ -7,25 +7,37 @@
     <meta charset="utf-8">
     <link href="assets/css/reset.css" rel="stylesheet">
     <link href="assets/css/stylesheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 
 <body>
-    <a name="top"></a>
+    <a id="top"></a>
 
     <header>
-        <nav>
+
+        <a href="#main-menu" id="main-menu-toggle" class="menu-toggle" aria-label="Open main menu">
+            <span class="sr-only">Open main menu</span>
+            <span class="fas fa-bars" aria-hidden="true"></span>
+        </a>
+
+        <h1><a href="index.html">Churchill House</a></h1>
+
+        <nav id="main-menu" class="main-menu" aria-label="Main menu">
+            <a href="#main-menu-toggle" id="main-menu-close" class="menu-close" aria-label="Close main menu">
+                <span class="sr-only">Close main menu</span>
+                <span class="fas fa-times" aria-hidden="true"></span>
+            </a>
             <ul>
-                <li>
-                    <a href="design.html" class="currentpage">Design</a>
-                </li>
+                <li><a href="design.html">Design</a></li>
                 <li><a href="history.html">History</a></li>
                 <li>
-                    <h1><a href="homepage.html">Churchill House</a></h1>
+                    <a id="heading" href="index.html">Churchill House</a>
                 </li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="boyd.html">Robin Boyd</a></li>
+                <li><a href="boyd.html">Boyd</a></li>
             </ul>
         </nav>
+        <a href="#main-menu-toggle" class="backdrop" tabindex="-1"></a>
     </header>
 
     <div class="wrapper">
@@ -45,6 +57,8 @@
             <p>The main building displays several different elevational treatments. The elevations facing onto the pool area feature floor to ceiling glass with minimal black metal frames to the lowest level, and precast vertical panels on the upper two storeys. Each panel has a projecting fin and are relatively narrow, with the overall affect being of closely spaced vertical fins. Beside the fins are narrow, slot windows providing minimal outlook onto the pool area.</p>
 
             <p>The south and east elevations are quite different in character having long horizontal sections of flush-mounted glazing set in minimal black metal frames, with timber-textured off-form concrete spandrels between storeys. The base course of the elevation is a large section black-coated steel beam. Several window-mounted airconditioners are located on the south elevation. The blank end walls of the wings and the lift tower are off-form, timber-textured concrete with incised storey lines.</p>
+
+            <img src="assets/images/g-churchill-house-34.jpg" alt="Main Building" class="rightimg">
 
             <p>At the junction of the two wings are the foyers for each floor as well as the service core including the lift. Apart from the off-form concrete walls of the service elements, the foyers feature glazing set in black metal frames which extends the full height of the building. At the ground floor level the glazing is vertical but above that for the remaining two storeys it is sloping.</p>
 

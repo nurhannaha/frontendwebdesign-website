@@ -7,42 +7,56 @@
     <meta charset="utf-8">
     <link href="assets/css/reset.css" rel="stylesheet">
     <link href="assets/css/stylesheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 
 <body>
-    <a name="top"></a>
+    <a id="top"></a>
 
     <header>
-        <nav>
+
+        <a href="#main-menu" id="main-menu-toggle" class="menu-toggle" aria-label="Open main menu">
+            <span class="sr-only">Open main menu</span>
+            <span class="fas fa-bars" aria-hidden="true"></span>
+        </a>
+
+        <h1><a href="index.html">Churchill House</a></h1>
+
+        <nav id="main-menu" class="main-menu" aria-label="Main menu">
+            <a href="#main-menu-toggle" id="main-menu-close" class="menu-close" aria-label="Close main menu">
+                <span class="sr-only">Close main menu</span>
+                <span class="fas fa-times" aria-hidden="true"></span>
+            </a>
             <ul>
                 <li><a href="design.html">Design</a></li>
                 <li><a href="history.html">History</a></li>
                 <li>
-                    <div class="logo">
-                        <h1><a href="homepage.html">Churchill House</a></h1>
-                    </div>
+                    <a id="heading" href="index.html">Churchill House</a>
                 </li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="boyd.html" class="currentpage">Robin Boyd</a></li>
+                <li><a href="boyd.html">Boyd</a></li>
             </ul>
         </nav>
+        <a href="#main-menu-toggle" class="backdrop" tabindex="-1"></a>
     </header>
 
     <div class="wrapper">
         <main>
 
-            <h2>Boyd</h2>
+            <h2>Robin Boyd</h2>
             <h3>The Architect</h3>
 
-            <img src="assets/images/boyd-portrait.jpg" alt="Robin Boyd Portrait, copyright Mark Strizic" class="leftimg-portrait">
+            <img src="assets/images/boyd-portrait.jpg" alt="Robin Boyd Portrait, copyright Mark Strizic" id="leftimg-portrait">
 
             <p>Robin Gerard Penleigh <a href="https://robinboyd.org.au/centenary/">Boyd</a> (1919-1971) was a nationally and internationally renowned architect. He was also widely published and appreciated as an architectural critic. In 1953 Robin Boyd, Roy Grounds and Frederick Romberg formed the practice of Grounds, Romberg and Boyd which became a leading architectural firm in Melbourne. The firm also practiced extensively in Canberra.</p>
 
             <p>Although the three partners were prominent as individuals, the firm maintained a strong design unity. Some buildings revealed the hand of one or other of the architects, but in general the firm developed a corporate style, combining the philosophies of the trio and representing the advanced thinking of that era. They often worked or supervised on each other’s projects. Their work was a distinctive Australian form of the International Style, then called Contemporary. (Clerehan, 1993)</p>
 
-            <img src="assets/images/boyd-logo.png" alt="Boyd Logo" class="leftimg-logo">
+            <img src="assets/images/boyd-logo.png" alt="Boyd Logo" id="leftimg-logo">
 
             <p>Boyd joined the National Capital Planning Committee (NCPC) in January 1968 as one of two architectural experts, the other being Professor Gordon Stephenson from Western Australia. Boyd and Stephenson were charged with creating a statement of civic design philosophy that would form the basis of the NCDC policies relating to the Buildings (Design and Siting) Ordinance 1964. These policies would guide the aesthetic, development principles and layout of buildings in the National Capital areas of Canberra.</p>
+
+            <p id="copyright">Robin Boyd Portrait, copyright Mark Strizic.</p>
 
             <h3>Writing Career</h3>
 

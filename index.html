@@ -3,44 +3,77 @@
 <html lang="en">
 
 <head>
-    <title>My website</title>
+    <title>Homepage</title>
     <meta charset="utf-8">
     <link href="assets/css/reset.css" rel="stylesheet">
-    <link href="assets/css/styles.css" rel="stylesheet">
-
+    <link href="assets/css/stylesheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 
-<body>
-    <div class="wrapper">
-        <header>
-            <h1><a href="index.html">My website</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="desc.html">Description</a></li>
-                    <li><a href="history.html">History</a></li>
-                    <li><a href="sos.html">Statement of Significance</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="boyd.html">Robin Boyd</a></li>
-                </ul>
-            </nav>
-        </header>
+<body class="homepagebg">
 
-        <main>
-            <h2>Welcome</h2>
+    <header>
 
-            <p>Churchill House was designed by <a href="https://robinboyd.org.au/centenary/">Robin Boyd</a> for the Winston Churchill Memorial Trust of Australia in 1969-70 and construction was completed in 1971. The building is an example of the Late Twentieth-Century Brutalist Style (1960-) with its large areas of blank wall and off-form concrete.</p>
+        <a href="#main-menu" id="main-menu-toggle" class="menu-toggle" aria-label="Open main menu">
+            <span class="sr-only">Open main menu</span>
+            <span class="fas fa-bars" aria-hidden="true"></span>
+        </a>
 
-            <p>The main building displays several different elevational treatments. The elevations facing onto the pool area feature floor to ceiling glass with minimal black metal frames to the lowest level, and precast vertical panels on the upper two storeys. Each panel has a projecting fin and are relatively narrow, with the overall affect being of closely spaced vertical fins. Beside the fins are narrow, slot windows providing minimal outlook onto the pool area.</p>
+        <h1><a href="index.html">Churchill House</a></h1>
 
-            <p>The south and east elevations are quite different in character having long horizontal sections of flush-mounted glazing set in minimal black metal frames, with timber-textured off-form concrete spandrels between storeys. The base course of the elevation is a large section black-coated steel beam. Several window-mounted airconditioners are located on the south elevation. The blank end walls of the wings and the lift tower are off-form, timber-textured concrete with incised storey lines.</p>
+        <nav id="main-menu" class="main-menu" aria-label="Main menu">
+            <a href="#main-menu-toggle" id="main-menu-close" class="menu-close" aria-label="Close main menu">
+                <span class="sr-only">Close main menu</span>
+                <span class="fas fa-times" aria-hidden="true"></span>
+            </a>
+            <ul>
+                <li><a href="design.html">Design</a></li>
+                <li><a href="history.html">History</a></li>
+                <li>
+                    <a id="heading" href="index.html">Churchill House</a>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="boyd.html">Boyd</a></li>
+            </ul>
+        </nav>
+        <a href="#main-menu-toggle" class="backdrop" tabindex="-1"></a>
+    </header>
 
-            <img src="assets/images/boyd-logo.png" alt="Robin Boyd logo" class="leftimg">
-        </main>
+    <main class="homepage">
+        <div class="wrapper">
 
-    </div>
+            <p class="opening">Churchill House, at 216 Northbourne Avenue in Braddon, was designed by Robin Boyd for the Winston Churchill Memorial Trust of Australia in 1969-70, and construction was completed in 1971. It was Boyd's last major commission, and he died prior to its completion. It is one of a small number of larger designs produced by Boyd and was Canberra's first brutalist building.</p>
+
+            <h2 class="home-headings">Churchill House</h2>
+
+            <p>Several components make up the complex. The main building, with east and south wings; the separate north wing or pavilion; the central pool and a rear carpark. The main building forms an L shape and with the north wing it encloses a courtyard with a large ornamental pool. The main building is three storeys high with a four storey lift tower at the southeast corner. The north wing and the carpark are two storeyed.</p>
+
+            <p>Although it has undergone some alterations over the years, the building still displays key features of the brutalist style with its large areas of blank wall and use off-form concrete, sloping structural fins and precast concrete non-loadbearing wall panels, precast fins for sun protection, and vertical slit windows. Churchill House displays a fairly restrained form in comparison with the major Canberra buildings that followed in this style: Cameron Offices, National Gallery of Australia and High Court of Australia.</p>
+
+            <h2 class="home-headings">Statement of Significance</h2>
+
+            <img src="assets/images/homepage-plaque.jpg" alt="The Plaque" id="rightimg-home">
+
+            <p>Churchill House is a good example of the Late Twentieth Century Brutalist style, (1960-), displaying several key features as follows:</p>
+
+            <ul>
+                <li>Large areas of blank wall, especially the west wall of the south wing.</li>
+                <li>Off-form concrete, such as the west wall of the south wing and the spandrels to the south and east wings.</li>
+            </ul>
+
+            <p>In addition, it displays a number of the other features of this style including: sloping structural fins, precast concrete non-loadbearing wall panels, precast fins for sun protection, and vertical slit windows. Churchill House is one of several Canberra examples of this style, and one of only two which display a restrained form reflecting, perhaps, a more conservative approach to the style because of the intended office use.</p>
+
+            <p>The architecture of this building may contribute to the education of designers in their understanding of Late Twentieth-Century Architectural Styles.</p>
+
+            <p>Churchill House has interest for its association with the prominent architect, Robin Boyd. The building was his last major commission.</p>
+
+        </div>
+
+    </main>
 
     <footer>
-        <p>This will be a footer</p>
+        <p>This website was produced by students in the Faculty of Arts &amp; Design, University of Canberra, 2019.</p>
+        <a href="#top">Back to top</a>
     </footer>
 
 </body>
