@@ -39,8 +39,10 @@ h1 {
     /* background-color: brown; */
     text-align: center;
     text-transform: uppercase;
-    padding: 20px;
-    margin: 10px 145px;
+    padding: 1.25rem;
+    /* 20px */
+    margin: 0.625rem 9.063rem;
+    /* 10px 145px */
     display: none;
 }
 
@@ -79,7 +81,8 @@ h3 {
 }
 
 .gallery {
-    margin: 20px 0px;
+    margin-bottom: 1.25rem;
+    /* 20px */
 }
 
 h4 {
@@ -111,10 +114,12 @@ p {
 }
 
 #copyright {
-    margin: 0px 75px;
+    font-size: 1.000em;
+    /* 16px */
+    margin: 0em 4.6875em;
+    /* 0px 75px */
     color: brown;
     font-family: 'DM Serif Text', serif;
-    font-size: 16px;
 }
 
 .opening {
@@ -181,7 +186,8 @@ nav ul {
     font-size: 1.250em;
     /* 20px */
     list-style: none;
-    padding: 15px;
+    padding: 0.75em;
+    /* 15px */
     padding-left: 0em;
     display: flex;
     justify-content: space-between;
@@ -280,6 +286,8 @@ main {
     padding: 1.250em;
     /* 20px */
     overflow: auto;
+    margin-bottom: 1.250em;
+    /* 20px */
 }
 
 .homepage {
@@ -322,7 +330,8 @@ footer a {
 #leftimg-portrait {
     width: 45%;
     float: left;
-    margin: 10px 20px 20px 0px;
+    margin: 0.625em 1.250em 1.250em 0em
+        /* 10px 20px 20px 0px */
 }
 
 #leftimg-logo {
@@ -361,17 +370,26 @@ footer a {
 
 .image {
     padding: 6px;
+    /* 6px */
     float: left;
-    width: 200px;
+    width: 12.500em;
+    /* 200px */
 }
 
-.image img {
-    margin: 0px 0px 25px;
+.gal-image img {
+    margin: 0em 0em 1.563em;
+    /* 0px 0px 25px */
+    border: 0.063em solid transparent;
+    /* 1px */
 }
 
-.image img:hover {
-    border: 1px solid black;
-    margin: auto;
+.row {
+    clear: both;
+}
+
+.gal-image img:hover {
+    border: 0.063em solid black;
+    /* 1px */
 }
 
 /* responsive css for main containers */
@@ -383,14 +401,10 @@ footer a {
     #rightimg-home,
     #leftimg-portrait,
     #leftimg-logo,
-    .leftimg {
+    .leftimg,
+    .image {
         float: none;
         width: 95%;
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
     }
 
     .homepagebg {
@@ -398,20 +412,29 @@ footer a {
     }
 
     .opening {
-        padding-top: 450px;
-        padding-bottom: 30px;
+        padding-top: 28.125rem;
+        /* 450px */
+        padding-bottom: 1.875rem;
+        /* 30px */
     }
 
     footer p {
-        font-size: 11px;
+        font-size: 0.688rem;
+        /* 11px */
     }
 
     h4 {
-        line-height: 50px;
+        line-height: 3.125rem;
+        /* 50px */
     }
 
     p {
-        line-height: 45px;
+        line-height: 2.813rem;
+        /* 45px */
+    }
+
+    #copyright {
+        margin: 0em 1em;
     }
 }
 
@@ -444,6 +467,7 @@ footer a {
     }
 
     /* Screen reader only */
+
     .sr-only {
         position: absolute;
         width: 1px;
@@ -456,6 +480,7 @@ footer a {
     }
 
     /* Button styling */
+
     .menu-toggle {
         line-height: 1em;
         font-size: 3em;
@@ -532,13 +557,6 @@ footer a {
         font-size: 1.5em;
     }
 
-    /*
- On small devices, allow it to toggle...
-*/
-    /*
- :target for non-JavaScript
- [aria-expanded] will be used if/when JavaScript is added to improve interaction, though it's completely optional.
-*/
     .main-menu:target,
     .main-menu[aria-expanded="true"] {
         display: block;
@@ -560,10 +578,6 @@ footer a {
         z-index: 1000;
     }
 
-    /* 
- We could us `.main-menu:target:after`, but
- it wouldn't be clickable.
-*/
     .main-menu:target + .backdrop,
     .main-menu[aria-expanded="true"] + .backdrop {
         position: absolute;
